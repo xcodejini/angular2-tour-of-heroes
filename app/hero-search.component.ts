@@ -17,8 +17,9 @@ import 'rxjs/add/operator/switchMap';
   selector: 'hero-search',
   templateUrl: 'hero-search.component.html',
   styleUrls: ['hero-search.component.css'],
-  providers: [HeroSearchService]
+  providers: [HeroSearchService] // why is here proviers?
 })
+
 export class HeroSearchComponent implements OnInit {
   heroes: Observable<Hero[]>;
   private searchTerms = new Subject<string>();
